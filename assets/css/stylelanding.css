@@ -1,0 +1,99 @@
+
+.kotak:before {
+   content: '';
+   background-color: rgba(0, 0, 0, 0.4);
+   position: fixed;
+   top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    display: none;
+}
+.text-white {
+    color: white;
+    text-decoration: none;
+}
+.none-decoration {
+    text-decoration: none;
+}
+
+.kotak:target:before {
+display: block;
+}
+
+.in-kotak {
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: -200px;
+      
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    transform: translateY(-400%);
+    transition:transform 1s ease;
+
+
+}
+.kotak:target .in-kotak {
+    transform: translateY(-350%);
+}
+
+  .badge {
+    font-size: 15px;
+}
+
+.back-blue {
+    background-color: #0275d8;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: antiquewhite !important;
+}
+.back-orange {
+    background-color: rgba(255,193,7,0.800);
+}
+.border-right {
+    border-right: 0.5px solid grey;
+}
+.border-left {
+    border-left: 0.5px solid grey;
+}
+.tapungu:hover {
+    background-color: blueviolet;
+}
+
+.full{
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.full2{
+    background-color: rgba(0, 0, 0, 0.201);
+}
+.size {
+    width: 40%;
+}
+/*.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+*/
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+.d-none {
+    display: none !important;
+  }
+.d-lg-block {
+    display: block !important;
+  }
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+  }
+.mr-0,
+.mx-0 {
+    margin-right: 0 !important;
+  }

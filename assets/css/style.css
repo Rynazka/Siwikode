@@ -1,0 +1,130 @@
+
+.kotak:before {
+   content: '';
+   background-color: rgba(0, 0, 0, 0.4);
+   position: fixed;
+   top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    display: none;
+}
+.text-white {
+    color: white;
+    text-decoration: none;
+}
+.none-decoration {
+    text-decoration: none;
+}
+
+.kotak:target:before {
+display: block;
+}
+
+.in-kotak {
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: -200px;
+      
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    transform: translateY(-300%);
+    transition:transform 1s ease;
+
+
+}
+.kotak:target .in-kotak {
+    transform: translateY(-550%) !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+.kotak:target .in-kotak {
+        transform: translateY(-550%) !important;
+    }
+.badge {
+    font-size: 15px;
+}
+  }
+  .masthead {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/rekreasi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+.back-orange {
+    background: url('https://imgur.com/a/tiVuCNL') !important;
+}
+.breadcrumb-lebar {
+    width: 100%;
+    height:35px;
+}
+.minifont {
+    font-size: 10px;
+}
+.midfont {
+    font-size: 15px;
+}
+
+.back-blue {
+    background-color: #0275d8;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: url('https://imgur.com/a/tiVuCNL') !important;
+}
+.border-right {
+    border-right: 0.5px solid grey;
+}
+.border-left {
+    border-left: 0.5px solid grey;
+}
+.tapungu:hover {
+    background-color: blueviolet;
+}
+
+.full{
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.full2{
+    background-color: rgba(0, 0, 0, 0.201);
+}
+.size {
+    width: 40%;
+}
+/*.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+*/
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+.d-none {
+    display: none !important;
+  }
+.d-lg-block {
+    display: block !important;
+  }
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+  }
+.mr-0,
+.mx-0 {
+    margin-right: 0 !important;
+  }
+.color-back {
+    background-color: antiquewhite !important;
+}
